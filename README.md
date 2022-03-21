@@ -1,18 +1,17 @@
 # Identify NFT Trends
-![image](https://github.com/Kimiria/AIPI540/blob/main/NFT.jpg)
+![image](https://media.wired.com/photos/622bde93d53a49d05c484009/master/pass/NFTs-Don't-Work-They-Way-You-Think-Gear-1239020052.jpg)
 
 ## Problem Statement
  * The Non-Fungible Tokens (NFTs) are a fresh topic full of heat that is gaining public attention.
  * The largest NFT marketplaces don't have the functionality to reflect categorization by the elements on the NFT, so we decided to apply CV & NLP to analyze the current NFT trends. (i.e. What are current NFTs about?)
  * This information, on the one hand, helps to provide investment references for buyers, and on the other hand, it also provides a creative reference for sellers.
 
-## Getting Started
 Our approach consists of first using a publicly available dataset of NFT images, and then performing image captioning on each of them, we then use the captions to do topic modeling and create clusters based on the topics. Notice that these clusters are based on the underlying topics identified in the image captioning process, and are vulnerable to errors in that process. Nonetheless, this process serves as a proof of concept on the idea of combining both CV and NLP to understand and analyze visual elements in natural language. 
 
-## Data Source & Data Process
+### Data Source & Data Process
 [Kaggle](https://www.kaggle.com/datasets/vepnar/nft-art-dataset) dataset with 3000+ images from the 2021 NFT Collection
 
-We then used a pre-trained model `data\nft_image_captioning.py` to generate captions for the images, producing a [new dataset](https://github.com/bkenan/nft_nlp/blob/main/data/captions.csv) of descriptions. 
+We then used a pre-trained model `scripts/make_dataset.py` to generate captions for the images, producing a [new dataset](https://github.com/omartinez182/NFT-Captioning-and-Topic-Analysis/tree/main/data/processed) of descriptions. 
 
 ## Getting Started
 
@@ -65,3 +64,17 @@ BERTopic is a topic modeling technique that leverages BERT-based transformers an
 So we use BERT to extract different embeddings based on the context of the words. And we used UMAP for dimensionality reduction due to its best performance among other methods. Then we use TF-IDF to demonstrate the important words in each cluster (each topic becomes a document). 
 
 
+## Citations
+
+```
+@misc{grootendorst2020bertopic,
+  author       = {Maarten Grootendorst},
+  title        = {BERTopic: Leveraging BERT and c-TF-IDF to create easily interpretable topics.},
+  year         = 2020,
+  publisher    = {Zenodo},
+  version      = {v0.9.4},
+  doi          = {10.5281/zenodo.4381785},
+  url          = {https://doi.org/10.5281/zenodo.4381785}
+}
+
+```
