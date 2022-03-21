@@ -30,18 +30,18 @@ Or
 ```
 $ apt-get install git-lfs
 ```
-After that, you can simply do a lfs pull to get the large file.
+After that, you can simply do a lfs pull to get the large file. Make sure you are in the appropriate working directory (​​%cd NFT-Captioning-and-Topic-Analysis/).
 ```
 $ git lfs pull
 ```
-Now you can execute the file to create the captioning 
+Now you can execute the file to create the captioning.
 
 ```
 $ python3 scripts/make_dataset.py
 ```
-Notice that here we provide a sample image as an example because the full dataset would take hours to be produced. However, you can include any additional images (or download the full dataset from Kaggle) to produce the captions for all images. For convenience, we’ve also included the output already to use for modeling, so this shouldn’t be necessary.
+Notice that here we provide a sample image as an example because the full dataset would take hours to be produced. However, you can include in the ```data```  -> ``` raw``` folder any additional images (or download the full dataset from Kaggle) to produce the captions for all images. For convenience, we’ve also already included the output/processed data to use for modeling, so this shouldn’t be necessary.
 
-Finally, to do the modeling and create the topic clusters you can run:
+Finally, to do the modeling (Deep Learning) and create the topic clusters you can run:
 ```
 $ python3 setup.py
 ```
@@ -63,6 +63,13 @@ BERTopic is a topic modeling technique that leverages BERT-based transformers an
  
 So we use BERT to extract different embeddings based on the context of the words. And we used UMAP for dimensionality reduction due to its best performance among other methods. Then we use TF-IDF to demonstrate the important words in each cluster (each topic becomes a document). 
 
+If you’d like to run the script for the comparison between the two approaches and get their silhouette scores you can run:
+
+```
+$ python3 scripts/comparision_bert_lda.py.py
+```
+
+
 
 ## Citations
 
@@ -75,6 +82,11 @@ So we use BERT to extract different embeddings based on the context of the words
   version      = {v0.9.4},
   doi          = {10.5281/zenodo.4381785},
   url          = {https://doi.org/10.5281/zenodo.4381785}
+}
+
+@misc{Pytorch Captioning,
+  author       = {Yunjey Choi},
+  url          = {https://github.com/yunjey/pytorch-tutorial#readme
 }
 
 ```
