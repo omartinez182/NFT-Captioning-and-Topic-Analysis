@@ -1,7 +1,3 @@
-# !pip install umap-learn
-# !pip install stop_words
-# !pip install sentence-transformers
-
 from stop_words import get_stop_words
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
