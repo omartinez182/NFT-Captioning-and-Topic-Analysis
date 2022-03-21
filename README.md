@@ -18,7 +18,7 @@ We then used a pre-trained model `scripts/make_dataset.py` to generate captions 
 First, install the requirements necessary to run the python files.
 
 ```
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 Then, because the trained model is large it is necessary to use Git Large File Storage (LFS) to pull the pre-trained model. If you don’t have LFS installed, you can do this with either brew or apt-get.
 

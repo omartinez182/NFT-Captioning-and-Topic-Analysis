@@ -13,6 +13,18 @@ from model import EncoderCNN, DecoderRNN
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 def load_image(image_path, transform=None):
+    """
+    Performs address (string) normalization.
+    Params
+    ------
+    image_path: str
+        Path to the image to be processed.
+
+    Output
+    ------
+    image: array
+        Transformed image array.
+    """
     image = Image.open(image_path).convert('RGB')
     image = image.resize([224, 224], Image.LANCZOS)
 
@@ -22,6 +34,30 @@ def load_image(image_path, transform=None):
     return image
 
 def get_caption(image, embed_size=256, hidden_size=512, num_layers=1):
+    """
+    Performs address (string) normalization.
+    Params
+    ------
+    image:
+        Image to be processed.
+
+    embed_size:
+        Size of the embeddings.
+    
+    hidden_size:
+        Hidden size of NN.
+
+    num_layers:
+        Number of layers.
+
+    Output
+    ------
+    sentence: str
+        Description of the image.
+
+    image_path: str
+        Name of the image.
+    """
     image_path = image
 
     # Image preprocessing
