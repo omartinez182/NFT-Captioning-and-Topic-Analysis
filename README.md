@@ -47,6 +47,9 @@ $ python3 setup.py
 ```
 The output will be 2 HTML files with the interactive plots for the topic clusters, and the bar plots for the most popular topics. You can directly use your browser to open these files.
 
+Here's an example of how to execute all of the scripts using Google [Colab](https://colab.research.google.com/drive/1wXlb6_uBGo7Yo-d3V4NNHplxI0alY5TC?usp=sharing).
+
+
 ## Modeling Details
 
 For modeling, we tested two different approaches, one that uses a classic statistical/machine learning approach (LDA) and another one that leverages deep learning (BERT). The details of each approach are as follows:
