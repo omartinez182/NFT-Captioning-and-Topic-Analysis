@@ -5,7 +5,7 @@ from bertopic import BERTopic
 
 def main():
     """
-    Performs address (string) normalization.
+    Performs topic modeling.
 
     Output
     ------
