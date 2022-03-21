@@ -69,6 +69,7 @@ If you’d like to run the script for the comparison between the two approaches 
 $ python3 scripts/comparision_bert_lda.py
 ```
 
+This will also produce two png images with the cluster results for each approach.
 
 
 ## Citations
