@@ -102,7 +102,7 @@ def main():
             plt.plot(x, y, '.', alpha=0.4, label=cluster_label)
         plt.legend(title="Topic", loc='upper left', bbox_to_anchor=(1.01, 1))
         plt.title(title)
-        plt.savefig('title.png')
+        plt.savefig(str(title)+'.png')
 
 
 
@@ -128,11 +128,6 @@ def main():
                                             id2word=dictionary, passes=20)
 
     embedding_lda = get_document_topic_lda(ldamodel, corpus, ntopic)
-
-
-    for i, topic in enumerate(embedding_lda[10].flatten()):
-        print("Topic ", i+1, ") ", embedding_lda[10].flatten()[i])
-
 
     ldamodel.get_document_topics(corpus[0])
     srtd = sorted(ldamodel.get_document_topics(corpus[0]),
