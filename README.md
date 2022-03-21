@@ -66,7 +66,7 @@ So we use BERT to extract different embeddings based on the context of the words
 If you’d like to run the script for the comparison between the two approaches and get their silhouette scores you can run:
 
 ```
-$ python3 scripts/comparision_bert_lda.py.py
+$ python3 scripts/comparision_bert_lda.py
 ```
 
 
