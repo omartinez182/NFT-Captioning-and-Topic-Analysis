@@ -2,7 +2,7 @@
 ![image](https://media.wired.com/photos/622bde93d53a49d05c484009/master/pass/NFTs-Don't-Work-They-Way-You-Think-Gear-1239020052.jpg)
 
 ## Problem Statement
-The Non-Fungible Tokens (NFTs) are a fresh topic full of heat that is gaining public attention. However, the largest NFT marketplaces don't have the functionality to reflect categorization by the elements on the NFT, so we decided to apply CV & NLP to try to analyze the current NFT trends. (i.e. What are current NFTs about?) 
+Non-Fungible Tokens (NFTs) are a fresh topic full of heat that is gaining public attention. However, the largest NFT marketplaces don't have the functionality to reflect categorization by the elements on the NFT, so we decided to apply CV & NLP to try to analyze the current NFT trends. (i.e. What are current NFTs about?) 
 
 This information, on the one hand, helps to provide investment references for buyers, and on the other hand, it also provides a creative reference for sellers.
 
