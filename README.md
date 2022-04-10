@@ -59,7 +59,7 @@ Latent Dirichlet allocation (LDA) is a particularly popular method for topic mod
 
 
 ### Deep Learning Approach
-BERTopic is a topic modeling technique that leverages BERT-based transformers and TF-IDF to create dense clusters, for more details see the citation below.e TF-IDF to demonstrate the important words in each cluster (each topic becomes a document). 
+BERTopic is a topic modeling technique that leverages BERT-based transformers and TF-IDF to create dense clusters, for more details see the citation below.
 
 If you'd like to run the script for the comparison between the two approaches and get their silhouette scores you can run:
 
