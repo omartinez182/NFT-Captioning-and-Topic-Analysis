@@ -1,5 +1,6 @@
 # Identify NFT Trends
-![image](https://media.wired.com/photos/622bde93d53a49d05c484009/master/pass/NFTs-Don't-Work-They-Way-You-Think-Gear-1239020052.jpg)
+![Took this photo at Wynwood](https://user-images.githubusercontent.com/63601717/172077874-f7734163-ff5f-471a-96b8-464e8db87e79.jpeg)
+
 
 ## Problem Statement
 Non-Fungible Tokens (NFTs) are a fresh topic full of heat that is gaining public attention. However, the largest NFT marketplaces don't have the functionality to reflect categorization by the elements on the NFT, so we decided to apply CV & NLP to try to analyze the current NFT trends. (i.e. What are current NFTs about?) 
