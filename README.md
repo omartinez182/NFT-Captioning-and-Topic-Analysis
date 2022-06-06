@@ -1,5 +1,5 @@
 # Identify NFT Trends
-![Took this photo at Wynwood](https://user-images.githubusercontent.com/63601717/172077874-f7734163-ff5f-471a-96b8-464e8db87e79.jpeg)
+![IMG_5990](https://user-images.githubusercontent.com/63601717/172077948-c9ccd65d-19b7-4ef9-a8b0-e44a8bb82e94.jpeg)
 
 
 ## Problem Statement
